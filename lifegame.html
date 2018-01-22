@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="lifegame.js"></script>
+	<script type="text/javascript" src="myjs.js"></script>
+	<link rel="stylesheet" type="text/css" href="lifegame.css">
+	<meta name="name" content="content" charset="utf-8">
+	<title>ライフゲーム</title>
+</head>
+<body onload="initialize();">
+	<header class="header clearfix">
+		<div class="heading">
+			<h1 class="title">*ライフゲーム()</h1>
+			<p class="heading-sentense">生命、進化、複雑系</p>
+		</div>
+	</header>
+	<div class="contents clearfix">
+		<div class="left-contents">
+			<table id="board"></table>
+			<input type="button" value="スタート" onclick="start();">
+			<input type="button" value="一時停止" onclick="stop();">
+			<input type="button" value="リセット" onclick="reset();">
+			<input type="button" value="高速" onclick="speedup();"><br>
+			<form name="form">
+				<select name="selbox">
+					<option name="signal">信号点滅機</option>
+					<option name="block">ブロック</option>
+					<option name="beacon">ビーコン</option>
+					<option name="honeycomb">蜂の巣</option>
+					<option name="acorn">ドングリ</option>
+					<option name="rPentomino">r-ペントミノ</option>
+					<option name="glider">グライダー</option>
+					<option name="gliderGun">グライダー銃</option>
+				</select>
+				<input type="button" value="召喚！！" onclick="summon();">
+			</form>
+		</div>
+		<div class="right-contents">
+			<h2>ライフゲームとは</h2>
+			<p>ライフゲームとは生命の進化をシュミレーションすることのできるゲームです。</p><br>
+			<h2>ライフゲームのルール</h2>
+			<p>　
+				多くの動物は1つの個体だけでは生きていけません。しかし、沢山の個体が一カ所に集まっても、食料不足や争いで死んでしまいます。ライフゲームではこのような「生命」同士の「やりとり」を以下のような4つのルールで表現しています。
+			</p>
+			<p>
+				誕生<br>
+
+				&nbsp;「生命」の存在しないマスの周り（縦、横、斜めの9方向）にちょうど「生命」が3体いれば、次の世代（ステップ）に新しい「生命」が誕生します。
+			</p>
+			<p>
+				生存<br>
+
+				&nbsp;「生命」の存在するマスの周りに「生命」が2体または3体ならば、次の世代（ステップ）でも生き残ります。
+			</p>
+			<p>
+				過疎<br>
+
+				&nbsp;「生命」の存在するマスの周りに「生命」が1体以下しか存在しない場合、過疎が原因で死んでしまいます。
+			</p>
+			<p>
+				過密<br>
+
+				&nbsp;「生命」の存在するマスの周りに「生命」が4体以上存在した場合、過密が原因で死んでしまいます。
+			</p>	
+		</div>
+	</div>
+	<br>
+	<footer>
+		<div id="link">
+			<a href="http://www.cis.twcu.ac.jp/~asakawa/MathBio2010/lesson01/index.html" target="_blank" class="link">解説サイト(これを読んで下さい)</a><br>
+		</div>
+		<div id="copyright">
+			<a href="https://www.sys.cs.tut.ac.jp/%E7%A0%94%E7%A9%B6%E6%B4%BB%E5%8B%95/%E7%A0%94%E7%A9%B6%E7%B4%B9%E4%BB%8B/%E3%82%BB%E3%83%AB%E3%82%AA%E3%83%BC%E3%83%88%E3%83%9E%E3%83%88%E3%83%B3%E3%81%A8%E3%81%AF%EF%BC%9F/" target="_blank" class="link">※このサイトの文章を使用</a>
+		</div>
+	</footer>
+</body>
+</html>

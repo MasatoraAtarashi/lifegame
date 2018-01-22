@@ -1,0 +1,100 @@
+body {
+	background-color: #fdf5e6;
+}
+
+header {
+	margin-top: 20px;
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+}
+
+h1 {
+	font-size: 35px;
+	font-family: 'Snell Roundhand',sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+
+.heading-sentense {
+	background-color: white;
+	margin: 0px;
+	margin-top: 5px;
+	padding: 0px;
+}
+
+h2 {
+	background-color: white;
+	font-size: 20px;
+	font-family: 'Snell Roundhand',sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+
+a {
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+}
+
+p {
+	margin: 0px;
+	margin-top: 10px; 
+	padding: 0px;
+}
+
+table {
+	margin-top: 10px;
+	/*background-color: black;*/
+	border-width: 0.1px;
+	border-style: solid;
+	border-color: black;
+	position: relative;
+	table-layout: fixed;
+}
+
+td {
+	background-color: white;
+}
+
+.left-contents {
+	position: relative;
+	left: 100px;
+	float: left;
+}
+
+.right-contents {
+	margin-top: 10px;
+	float: left;
+	position: relative;
+	left: 150px;
+	width: 400px;
+}
+
+.clearfix:after {
+	content: "";
+	clear: both;
+	display: block;
+
+}
+
+.right-contents p {
+	margin-left: 20px;
+}
+
+footer {
+	text-align: center;
+	width: 500px;
+	position: relative;
+	left: 300px;
+	padding: 10px;
+	font-size: small;
+}
+
+#link {
+	background-color: white;
+}
+
+#copyright {
+	text-align: center;
+}
